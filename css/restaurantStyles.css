@@ -1,0 +1,30 @@
+
+
+header  {
+	background-color: white;
+	padding: 10px;
+}
+
+li {
+	margin-right: 20px;
+}
+
+#title {
+	text-align: center;
+	font-family: 'Lora', serif;
+	font-size: 500%;
+}
+p {
+	display: inline-block;
+	margin: 0px 20px 0px 20px;
+}
+
+
+footer {
+	color: darkred;
+	background-color:white;
+ 	bottom: 0;
+ 	height: 100px;
+ 	width: 100%;
+  	text-align: center;
+}

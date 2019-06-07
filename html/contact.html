@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+
+<!-- Creator: Your Name
+Date created: Today's date
+Date last modified:  -->
+
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Lora&display=swap" rel="stylesheet">
+
+	<title>Contact Us</title>
+
+	<style type="text/css">
+		.contact-form {
+			text-align:center;
+			margin: 0px 50px 0px 50px;
+		}
+
+		.checkbox-inline{
+			margin: 0px 50px 0px 10px;
+		}
+
+		.question {
+			margin: 0px 25px 0px 30px;
+		}
+		#req {
+			font-weight: 800;
+		}
+
+
+		label {
+			text-align: right;
+		}
+
+	</style>
+
+	<link rel="stylesheet" type="text/css" href="E:\Repos\Restaurant\css\restaurantStyles.css" />
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> 
+
+</head>
+<body>
+	<header>
+		<noscript>
+			<div class="alert alert-warning">
+				<span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+				<strong>WARNING</strong> JavaScript disabled! This site is best viewed with JavaScript enabled.
+			</div>
+		</noscript>
+		<h1 id="title">The Bistro</h1>
+		<hr />
+		<nav>
+			<ul class="nav nav-pills">
+				<li class="nav-item">
+					<a class="nav-link" href="home.html">⌂</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="menu.html">Menu</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link active" href="contact.html">Contact Us</a>
+				</li>
+			</ul>
+		</nav>
+		<hr />
+	</header>
+<div class="container contact-form">
+<form>
+  <div class="form-group row">
+    <label for="inputName" class="col-sm-3 col-form-label" id="req" >Name:</label>
+    <div class="col-sm-9">
+      <input type="name" class="form-control" id="inputName" placeholder="Name">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="inputEmail" class="col-sm-3 col-form-label" id="req" >Email:</label>
+    <div class="col-sm-9">
+      <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="inputPhone" class="col-sm-3 col-form-label" id="">Phone:</label>
+    <div class="col-sm-9">
+      <input type="phone" class="form-control" id="inputPhone" placeholder="Phone">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="inputInquery" class="col-sm-3 col-form-label">Reason for Inquery:</label>
+    <div class="col-sm-9">
+		<select class="form-control" id="inputReason">
+		  <option>Catering</option>
+		  <option>Private Party</option>
+		  <option>Feedback</option>
+		  <option>Other</option>
+		</select>
+    </div>
+  </div> 
+  <div class="form-group row">
+    <label for="inputInfo" class="col-sm-3 col-form-label">Additonal Information:</label>
+    <div class="col-sm-9">
+      <textarea class="form-control" id="infobox" rows="2"></textarea>
+    </div>
+  </div>  
+    <div class="form-group row">
+    <label for="inputInfo" class="col-sm-3 col-form-label">Have you been to the restuarant?</label>
+      <div>
+			<div class="form-check form-check-inline question">
+ 				<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="NO">
+  				<label class="form-check-label" for="inlineRadio1">NO</label>
+			</div>
+			<div class="form-check form-check-inline">
+  				<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="YES">
+  				<label class="form-check-label" for="inlineRadio2">YES</label>
+			</div>
+      </div>
+    </div>
+
+  <div class="form-group row">
+    <div class="col-sm-3">    
+    	<label for="inputInfo" class="col-form-label">Best Days to Contact You:</label>
+    </div>
+    <div>
+      <div class="form-check">
+    	<label class="checkbox-inline">
+      		<input type="checkbox" value="M">M
+      	</label>
+  		<label class="checkbox-inline">
+      		<input type="checkbox" value="T">T
+      	</label>
+    	<label class="checkbox-inline">
+      		<input type="checkbox" value="W">W
+      	</label>
+    	<label class="checkbox-inline">
+      		<input type="checkbox" value="Th">Th
+      	</label>
+    	<label class="checkbox-inline">
+      		<input type="checkbox" value="F">F
+      	</label>      		
+      </div>
+    </div>
+ </div>
+  <div class="form-group row text-center">
+    <div class="col-sm-9">
+      <button class="btn btn-primary" id="buttonSubmit">Send Request</button>
+    </div>
+  </div>
+</form>
+</div>
+<footer> 
+     <hr />
+     <p>120 Coffee Dr, Java, Texas 75785 </p>
+     <p>(972) 555-5555</p>
+</footer>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+        <script>
+        	var submitButton = document.getElementById('buttonSubmit');
+        	var nameInput = document.getElementById('inputName');
+    		var emailInput = document.getElementById('inputEmail');
+
+
+        	submitButton.addEventListener('click', function(e) {
+        		e.preventDefault();
+        		var nameValid = nameInput.value !== "";
+        		var emailValid = emailInput.value !== "" && emailInput.value.includes('@');
+
+        		if (!nameValid) {
+        			alert('Please provide your name');
+        			return;
+        		}
+
+
+    			if (!emailValid) {
+    				alert('Please provide a valid email');
+    				return;
+    			}
+
+				alert('Your request has been submitted')
+        	})
+        </script>
+</body>
+</html>
